@@ -9,7 +9,13 @@ checkBtn.addEventListener("click", checkDob)
 function checkDob(){
 	let dob = inputDob.value;
 	const numb = inputNumb.value;
-    calculateSum(dob, numb)
+    const sum = calculateSum(dob,numb)
+	if(sum&&numb){
+    compareValue(sum&&numb) 
+	}
+	else{
+	outputTxt.innerText = "Please enter Both the Fields!!"}
+
 }
 
 function calculateSum(dob,numb){
