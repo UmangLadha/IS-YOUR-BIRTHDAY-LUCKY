@@ -1,12 +1,38 @@
 *{
-	margin: 0%;
+	margin: auto;
 	text-align: center;
 }
-
+:root{
+	--primary-color: #E0B1CB;
+	--secondary-color: #5E548E;
+}
+body{
+	background-color:var(--secondary-color);
+	color: var(--primary-color);
+}
 header{
-	align-items: center;
+	margin: 2em;
+	
+}
+div{
+	width: 30%;
 }
 
-div{
-	align-items: center;
+input,label{
+	font-size: 15px;
+	color: var(--primary-color);
+	width: 100%;
+	padding: 4px;
+
+}
+
+button{
+	width: 40%;
+	margin-top: 8px;
+	padding: 5px;
+	font-size: 18px;
+	background-color: var(--secondary-color);
+	border-radius: 6px;
+	border-color: var(--primary-color);
+	color:var(--primary-color);
 }
